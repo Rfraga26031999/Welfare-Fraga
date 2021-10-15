@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* etiqueta raiz */
+  font-size: 62.5%;
+}
+
+.subtitulo {
+  border-radius: 1rem;
+  color: black;
+  border: inset 0.5rem black;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #c9c2bb;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 1.5rem;
+  font-size: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+}
+
+.nav__link {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #e1ebea;
+}
+
+.motivacion {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.parrafo {
+  text-align: justify;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  padding: 0.5rem;
+  width: 90%;
+}
+
+.footer {
+  font-size: 1.9rem;
+  margin: 0.5rem;
+}
+
+.redes {
+  width: 80%;
+  font-size: 1.4rem;
+  margin: 0.5rem;
+}
+
+nav {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.header {
+  width: 80%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.contenido {
+  padding: 0.5rem;
+  margin: 0.2rem;
+}
+
+.programas {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.programa {
+  border-radius: 1rem;
+  padding: 0.3rem;
+  margin: 1rem;
+  display: inline-block;
+  background-color: #c9c2bb;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+
+.duracion {
+  line-height: 2rem;
+}
+
+div.banner {
+  text-align: left;
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  right: 85%;
+}
+
+div.banner span {
+  font-family: "Anton", sans-serif;
+}
+
+div.banner h1 {
+  font-family: "Anton", sans-serif;
+}
+
+footer {
+  border-radius: 1rem;
+  color: black;
+  border: outset 0.5rem black;
+  background-color: #c9c2bb;
+  margin: 1.1rem;
+  text-align: center;
+}
+
+.armas li {
+  border-radius: 1rem;
+  border: solid 0.2rem black;
+  padding: 0.2rem;
+  margin: 0 auto;
+}
+
+div.formulario {
+  max-width: 700px;
+  width: 70%;
+  border: groove 1rem black;
+  border-radius: 2rem;
+  line-height: 2rem;
+  margin: 0px auto;
+}
+
+.form {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#logo {
+  text-align: center;
+}
+
+#mensaje {
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 400px;
+}
+
+.imagen {
+  margin: 0px 23px;
+  border-radius: 1rem;
+  width: 80px;
+  height: 80px;
+}
+
+.producto {
+  margin: 0px;
+  width: 150px;
+  height: 100px;
+}
+
+.listado {
+  position: relative;
+  width: 500px;
+  height: 100px;
+  margin: 0px 5rem;
+  text-align: center;
+}
+
+.nombreproducto {
+  text-align: center;
+  position: relative;
+}
+
+.contenedor {
+  display: inline-block;
+  text-align: center;
+}
