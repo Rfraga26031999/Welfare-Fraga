@@ -37,131 +37,134 @@
 
   <body>
     <header>
-      <div class="header">
-        <div class="banner">
-          <h1>Welfare</h1>
-          <span>Tu siguiente nivel</span>
-        </div>
-        <div id="logo">
+      <div>
+        <h1 id="marca">
+          Welfare
+          <span class="nivel">Tu siguiente nivel</span>
+        </h1>
+        <div class="logo">
           <a href="index.html"
-            ><img src="welfare.svg" alt="Entrenamiento - Rutinas - Gimnasio" />
-          </a>
+            ><img src="welfare.svg" alt="Entrenamiento - Rutinas - Gimnasio"
+          /></a>
         </div>
         <nav>
           <ul>
             <li>
-              <a class="nav__link" href="index.html">Inicio</a>
+              <a class="link" href="index.html">Inicio</a>
             </li>
             <li>
-              <a class="nav__link" href="programas.html">Programas</a>
+              <a class="link" href="programas.html">Programas</a>
             </li>
             <li>
-              <a class="nav__link" href="productos.html">Productos</a>
+              <a class="link" href="productos.html">Productos</a>
             </li>
             <li>
-              <a class="nav__link" href="experienciawelfare.html"
-                >Experiencia Welfare</a
-              >
+              <a class="link" href="experienciawelfare.html">Experiencias</a>
             </li>
             <li>
-              <a class="nav__link" href="contacto.html">Contactanos</a>
+              <a class="link" href="contacto.html">Contactanos</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="contenido">
+    <main>
       <section>
         <div>
-          <h2 class="subtitulo">Unete a la familia Welfare</h2>
+          <h2>Unete a la familia Welfare</h2>
         </div>
       </section>
     </main>
 
-    <div class="formulario">
-      <form action="">
-        <fieldset>
-          <p class="motivacion">¿Que estas esperando? <b>¡Contactanos!</b></p>
+    <form class="form" action="">
+      <fieldset class="contacto">
+        <p class="parrafo1">¿Que estas esperando? <b>¡Contactanos!</b></p>
 
-          <div class="form">
-            <label class="ingresar" for="nombre"><b>Nombre:</b></label>
-            <input
-              class="dato"
-              type="text"
-              name="nombre"
-              id="nombre"
-              placeholder="Nombre"
-            />
-          </div>
+        <div>
+          <label for="nombre"><b>Nombre:</b></label>
+          <input
+            class="dato"
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre"
+          />
+        </div>
 
-          <div class="form">
-            <label class="ingresar" for="apellido"><b>Apellido:</b></label>
-            <input
-              class="dato"
-              type="text"
-              name="apellido"
-              id="apellido"
-              placeholder="Apellido"
-            />
-          </div>
+        <div>
+          <label for="apellido"><b>Apellido:</b></label>
+          <input
+            class="dato"
+            type="text"
+            name="apellido"
+            id="apellido"
+            placeholder="Apellido"
+          />
+        </div>
 
-          <div class="form">
-            <label class="ingresar" for="email"><b>Email:</b></label>
-            <input
-              class="dato"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Indique su email"
-            />
-          </div>
+        <div>
+          <label for="email"><b>Email:</b></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Indique su email"
+          />
+        </div>
 
-          <div class="form">
-            <label class="ingresar" for="Sexo"><b>Sexo:</b></label>
-            <select class="dato" name="Sexo" id="Sexo">
-              <option value="Hombre">Hombre</option>
-              <option value="Mujer">Mujer</option>
-              <option value="Otro">Otro</option>
-            </select>
-          </div>
+        <div>
+          <label for="Sexo"><b>Sexo:</b></label>
+          <select name="Sexo" id="Sexo">
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
 
-          <div class="form">
-            <span class="newsletter">¿Desea recibir el Newsletter?</span>
-            <input class="checkbox" type="checkbox" name="Aceptar" value="1" />
-          </div>
+        <div>
+          <span>¿Desea recibir el Newsletter?</span>
+          <input type="checkbox" name="Aceptar" value="1" />
+        </div>
 
-          <div id="mensaje">
-            <p><b>Mensaje:</b></p>
-            <textarea
-              name="mensaje"
-              id="mensaje"
-              cols="30"
-              rows="10"
-              placeholder="Deje su comentario"
-            >
-            </textarea>
-            <div>
-              <input type="submit" value="Enviar formulario" />
-              <input type="reset" value="Limpiar formulario" />
-            </div>
+        <div>
+          <p class="parrafo1"><b>Mensaje:</b></p>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            placeholder="Deje su comentario"
+          >
+          </textarea>
+          <div>
+            <input type="submit" value="Enviar formulario" />
+            <input type="reset" value="Limpiar formulario" />
           </div>
-        </fieldset>
-      </form>
-    </div>
+        </div>
+      </fieldset>
+    </form>
 
     <footer>
       <div>
         <h4>
-          <span class="redes">Seguinos en nuestras redes sociales</span>
+          <span>Seguinos en nuestras redes sociales</span>
         </h4>
       </div>
-      <div class="footer">
-        <a class="nav__link" href=""><i class="fab fa-facebook"></i></a>
-        <a class="nav__link" href=""><i class="fab fa-instagram"></i></a>
-        <a class="nav__link" href=""><i class="fab fa-twitter"></i></a>
-        <a class="nav__link" href=""><i class="fab fa-youtube"></i></a>
-      </div>
+      <ul>
+        <li>
+          <a class="link" href=""><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a class="link" href=""><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a class="link" href=""><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a class="link" href=""><i class="fab fa-youtube"></i></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

@@ -5,195 +5,247 @@
 }
 
 html {
-  /* etiqueta raiz */
   font-size: 62.5%;
 }
 
-.subtitulo {
-  border-radius: 1rem;
-  color: black;
-  border: inset 0.5rem black;
-  font-size: 2rem;
-  text-align: center;
-  background-color: #c9c2bb;
-}
-
-ul {
-  list-style-type: none;
-  line-height: 1.5rem;
-  font-size: 0;
-  text-align: center;
-}
-
-li {
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
-}
-
-.nav__link {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 1rem;
-  padding: 0.5rem;
-}
-
 body {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  font-family: "Fira Sans", sans-serif;
   background-color: #e1ebea;
+  font-family: "Fira Sans", sans-serif;
 }
 
-.motivacion {
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-
-.parrafo {
-  text-align: justify;
-  font-style: italic;
-  font-size: 1.4rem;
-  line-height: 1.7rem;
-  padding: 0.5rem;
-  width: 90%;
-}
-
-.footer {
-  font-size: 1.9rem;
-  margin: 0.5rem;
-}
-
-.redes {
-  width: 80%;
-  font-size: 1.4rem;
-  margin: 0.5rem;
+header {
+  color: black;
+  background: #0d1238;
+  border: 0.2rem inset #01062b;
+  top: 0px;
+  position: sticky;
+  z-index: 3;
 }
 
 nav {
-  font-size: 1.5rem;
-  line-height: 3rem;
-}
-
-.header {
+  display: flex;
   width: 80%;
-  max-width: 1240px;
-  margin: 0 auto;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.contenido {
-  padding: 0.5rem;
-  margin: 0.2rem;
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 40rem;
+  list-style: none;
 }
 
-.programas {
-  margin: 0 auto;
-  width: 60%;
-  text-align: center;
-  line-height: 2rem;
+li a.link {
+  background: #192054;
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem;
+  font-size: 1.8rem;
+  border-radius: 0.3rem;
+  border-top: 0.1rem inset black;
+  border-left: 0.2rem inset black;
+  border-right: 0.1rem outset black;
+  box-shadow: 0.2rem 0.1rem black;
 }
 
-.programa {
-  border-radius: 1rem;
-  padding: 0.3rem;
-  margin: 1rem;
-  display: inline-block;
-  background-color: #c9c2bb;
-  line-height: 3rem;
-  font-size: 1.5rem;
+li a.link:hover {
+  background: black;
+  color: orange;
 }
 
-.duracion {
-  line-height: 2rem;
-}
-
-div.banner {
-  text-align: left;
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-size: 2.5rem;
   position: absolute;
-  width: 10%;
-  height: 10%;
-  right: 85%;
+  padding: 0.2rem;
+  padding-left: 0px;
+  padding-top: 0px;
+  top: 0%;
+  color: #ff7a00;
+  font-style: oblique;
 }
 
-div.banner span {
-  font-family: "Anton", sans-serif;
+h1 div {
+  font-size: medium;
 }
 
-div.banner h1 {
+#marca {
+  display: flex;
+  flex: 2 1 40rem;
+  font-weight: 400;
   font-family: "Anton", sans-serif;
+  padding-left: 0.2rem;
+}
+
+h1#marca span.nivel {
+  font-size: 1rem;
+  text-align: left;
+}
+
+div.logo {
+  text-align: center;
 }
 
 footer {
-  border-radius: 1rem;
-  color: black;
-  border: outset 0.5rem black;
-  background-color: #c9c2bb;
-  margin: 1.1rem;
   text-align: center;
+  background: #232745;
+  color: white;
+  border: 0.4rem outset #192054;
 }
 
-.armas li {
-  border-radius: 1rem;
-  border: solid 0.2rem black;
-  padding: 0.2rem;
-  margin: 0 auto;
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0.5rem auto;
 }
 
-div.formulario {
-  max-width: 700px;
-  width: 70%;
-  border: groove 1rem black;
-  border-radius: 2rem;
-  line-height: 2rem;
-  margin: 0px auto;
+h4 {
+  font-size: medium;
+}
+
+h2 {
+  background: #232745;
+  border: 0.4rem inset #192054;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-size: medium;
+  color: white;
+  font-style: italic;
+  line-height: 1.7rem;
+  width: 95%;
+  text-align: justify;
+  padding: 1rem;
+}
+
+section.inicio {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 71.7vh;
+  background-image: url(mancuernas.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inicio div h3 {
+  color: #01062b;
+}
+
+p.parrafo {
+  color: black;
+  text-align: center;
+  padding: 0px;
+}
+
+.parrafo1 {
+  color: black;
+  text-align: center;
 }
 
 .form {
-  text-align: center;
-  padding: 0.5rem;
-}
-
-#logo {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-#mensaje {
-  border-radius: 0.5rem;
-  margin: 0 auto;
-  width: 95%;
-  max-width: 400px;
+.contacto {
+  border-radius: 0.6rem;
+  border: inset 0.4rem black;
 }
 
-.imagen {
-  margin: 0px 23px;
-  border-radius: 1rem;
-  width: 80px;
-  height: 80px;
-}
-
-.producto {
-  margin: 0px;
-  width: 150px;
-  height: 100px;
+h3 {
+  font-size: xx-large;
+  color: white;
 }
 
 .listado {
-  position: relative;
-  width: 500px;
-  height: 100px;
-  margin: 0px 5rem;
+  display: flex;
+  margin: 2rem auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+}
+
+.listado li a {
+  color: black;
+  text-decoration: none;
+}
+
+.listado li a div {
+  padding: 0.5rem;
+  text-align: center;
+  background: orange;
+  color: white;
+  border-bottom: 0.1rem inset black;
+  border-right: 0.1rem inset black;
+  border-left: 0.1rem outset black;
+  border-radius: 0.5rem;
+}
+
+.listado li a div:hover {
+  background: #232745;
+}
+
+.titulo {
+  background: #ff7a00;
+  border: 0.1rem solid #ffbc7d;
+  box-shadow: 0.2rem 0.1rem #ffbc7d;
+  text-align: center;
+  color: white;
+}
+
+.programas ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  column-gap: 120px;
+}
+
+.programas h3 {
+  color: #01062b;
   text-align: center;
 }
 
-.nombreproducto {
+.programas h4 {
   text-align: center;
-  position: relative;
 }
 
-.contenedor {
-  display: inline-block;
+.programas ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.programas ul li a div {
+  padding: 0.5rem;
   text-align: center;
+  background: orange;
+  color: white;
+  border-bottom: 0.1rem inset black;
+  border-right: 0.1rem inset black;
+  border-left: 0.1rem outset black;
+  border-radius: 0.5rem;
+}
+
+.programas ul li a div:hover {
+  background: #232745;
 }
