@@ -9,8 +9,22 @@ html {
 }
 
 body {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  min-height: 100vh;
   background-color: #e1ebea;
   font-family: "Fira Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
 }
 
 header {
@@ -19,7 +33,9 @@ header {
   border: 0.2rem inset #01062b;
   top: 0px;
   position: sticky;
-  z-index: 3;
+  z-index: 1;
+  background: linear-gradient(to bottom, #0d1238, #232745);
+  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -41,21 +57,20 @@ nav ul {
 }
 
 li a.link {
-  background: #192054;
   color: white;
   text-decoration: none;
   padding: 0.2rem;
   font-size: 1.8rem;
-  border-radius: 0.3rem;
-  border-top: 0.1rem inset black;
-  border-left: 0.2rem inset black;
-  border-right: 0.1rem outset black;
-  box-shadow: 0.2rem 0.1rem black;
+  transition: all 1s;
+  position: relative;
 }
 
 li a.link:hover {
-  background: black;
-  color: orange;
+  background: orange;
+  color: black;
+  background: linear-gradient(to bottom, #ff7a00, #ffbc7d);
+  border-radius: 0.2rem;
+  opacity: 0.9;
 }
 
 h1 {
@@ -83,6 +98,9 @@ h1 div {
   font-weight: 400;
   font-family: "Anton", sans-serif;
   padding-left: 0.2rem;
+  margin: auto 1rem;
+  transition: 1s;
+  transform: scale(1, 1);
 }
 
 h1#marca span.nivel {
@@ -92,6 +110,8 @@ h1#marca span.nivel {
 
 div.logo {
   text-align: center;
+  transition: 1s;
+  transform: rotateZ(-360deg);
 }
 
 footer {
@@ -99,6 +119,8 @@ footer {
   background: #232745;
   color: white;
   border: 0.4rem outset #192054;
+  margin: 1rem 0px 0px 0px;
+  background: linear-gradient(to top, #0d1238, #232745);
 }
 
 footer ul {
@@ -116,10 +138,22 @@ h4 {
 
 h2 {
   background: #232745;
-  border: 0.4rem inset #192054;
+  border: 0.2rem solid #232745;
   font-size: 2rem;
   text-align: center;
   color: white;
+  padding: 0.5rem;
+  animation-duration: 0.5s;
+  animation-name: titulo;
+  animation-iteration-count: 1;
+}
+@keyframes titulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 p {
@@ -127,42 +161,49 @@ p {
   color: white;
   font-style: italic;
   line-height: 1.7rem;
-  width: 95%;
+  width: 99%;
   text-align: justify;
   padding: 1rem;
+  margin: 1rem;
 }
 
 section.inicio {
   display: flex;
   align-items: center;
   text-align: center;
-  width: 100vw;
+  width: auto;
   height: 71.7vh;
-  background-image: url(mancuernas.jpg);
+  background-image: url(../img/mancuernas.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .inicio div h3 {
-  color: #01062b;
+  color: #ff9736;
+  padding: 3rem;
 }
 
 p.parrafo {
   color: black;
   text-align: center;
   padding: 0px;
+  margin: 1rem;
+  font-size: 1.8rem;
 }
 
 .parrafo1 {
   color: black;
   text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .form {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin: 1rem 0px 0px 0px;
 }
 
 .contacto {
@@ -203,14 +244,7 @@ h3 {
 
 .listado li a div:hover {
   background: #232745;
-}
-
-.titulo {
-  background: #ff7a00;
-  border: 0.1rem solid #ffbc7d;
-  box-shadow: 0.2rem 0.1rem #ffbc7d;
-  text-align: center;
-  color: white;
+  transition: 0.5s;
 }
 
 .programas ul {
@@ -224,10 +258,17 @@ h3 {
 .programas h3 {
   color: #01062b;
   text-align: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background: linear-gradient(to right, #ff7a00, #ff9736);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .programas h4 {
   text-align: center;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .programas ul li a {
@@ -248,4 +289,59 @@ h3 {
 
 .programas ul li a div:hover {
   background: #232745;
+  transition: 0.5s;
+}
+
+.nosotros {
+  color: black;
+  width: 99%;
+  padding: 0.7rem 15rem;
+  margin: 0.7rem;
+  text-align: justify;
+}
+
+label {
+  font-size: small;
+  margin: 0.5px 0.5rem 0px 0px;
+}
+
+.newsletter {
+  font-size: small;
+  margin: 1rem 0px 0px 0px;
+}
+
+input {
+  margin: 1rem;
+  padding: 0.3rem;
+}
+
+select {
+  margin: 1rem 0px 0px 0px;
+}
+
+.footerinicio {
+  margin: 0px;
+}
+
+p.intro {
+  text-align: center;
+  line-height: 2.2rem;
+}
+
+.inicio div .intro b {
+  font-size: 2.5rem;
+}
+
+fieldset {
+  padding: 0px 1.5rem 0px 1.5rem;
+}
+
+h4.experiencias {
+  background: #ff7a00;
+  color: white;
+  text-align: center;
+  font-size: 1.9rem;
+  background: linear-gradient(to right, #ff7a00, #ff9736);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }

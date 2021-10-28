@@ -15,8 +15,8 @@
     <meta name="author" content="Rogelio Fraga" />
     <meta name="audience" content="all" />
     <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" href="welfare.css" />
-    <link rel="shortcut icon" href="welfare.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/welfare.css" />
+    <link rel="shortcut icon" href="../img/welfare.svg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;800;900&family=Open+Sans:wght@400;500;800&family=Oswald:wght@400;500&display=swap"
       rel="stylesheet"
@@ -32,7 +32,7 @@
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
-    <title>Welfare | Nuestros productos</title>
+    <title>Welfare | Contacto</title>
   </head>
 
   <body>
@@ -44,7 +44,9 @@
         </h1>
         <div class="logo">
           <a href="index.html"
-            ><img src="welfare.svg" alt="Entrenamiento - Rutinas - Gimnasio"
+            ><img
+              src="../img/welfare.svg"
+              alt="Entrenamiento - Rutinas - Gimnasio"
           /></a>
         </div>
         <nav>
@@ -59,10 +61,10 @@
               <a class="link" href="productos.html">Productos</a>
             </li>
             <li>
-              <a class="link" href="experienciawelfare.html">Experiencias</a>
+              <a class="link" href="nosotros.html">Nosotros</a>
             </li>
             <li>
-              <a class="link" href="contacto.html">Contactanos</a>
+              <a class="link" href="contacto.html">Contáctanos</a>
             </li>
           </ul>
         </nav>
@@ -71,86 +73,85 @@
 
     <main>
       <section>
-        <h2>Nuestros productos</h2>
+        <div>
+          <h2>¡Únete a la familia Welfare!</h2>
+        </div>
       </section>
+
+      <form class="form" action="">
+        <fieldset class="contacto">
+          <p class="parrafo1">¿Qué estás esperando?</p>
+          <p class="parrafo1"><b>¡Contáctanos!</b></p>
+
+          <div>
+            <label for="nombre"><b>Nombre:</b></label>
+            <input
+              class="dato"
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre"
+            />
+          </div>
+
+          <div>
+            <label for="apellido"><b>Apellido:</b></label>
+            <input
+              class="dato"
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Apellido"
+            />
+          </div>
+
+          <div>
+            <label for="email"><b>Email:</b></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Indique su email"
+            />
+          </div>
+
+          <div>
+            <label for="Sexo"><b>Sexo:</b></label>
+            <select name="Sexo" id="Sexo">
+              <option value="Hombre">Hombre</option>
+              <option value="Mujer">Mujer</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+
+          <div>
+            <span class="newsletter">¿Desea recibir el Newsletter?</span>
+            <input type="checkbox" name="Aceptar" value="1" />
+          </div>
+
+          <div>
+            <p class="parrafo1"><b>Mensaje:</b></p>
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Deje su comentario"
+            >
+            </textarea>
+            <div>
+              <input type="submit" value="Enviar formulario" />
+              <input type="reset" value="Limpiar formulario" />
+            </div>
+          </div>
+        </fieldset>
+      </form>
     </main>
-
-    <h4 class="titulo">Proteinas</h4>
-    <section>
-      <ul class="listado">
-        <li>
-          <a href="">
-            <img src="proteina.png" alt="" width="80px" height="80px" />
-            <div>Proteina 500gr</div></a
-          >
-        </li>
-        <li>
-          <a href="">
-            <img src="proteina.png" alt="" width="80px" height="80px" />
-            <div>Proteina 1000gr</div></a
-          >
-        </li>
-        <li>
-          <a href="">
-            <img src="proteina.png" alt="" width="80px" height="80px" />
-            <div>Proteina 1500gr</div></a
-          >
-        </li>
-      </ul>
-    </section>
-
-    <h4 class="titulo">Suplementos</h4>
-    <section>
-      <ul class="listado">
-        <li>
-          <a href="">
-            <img src="creatina.jpg" alt="" width="80px" height="80px" />
-            <div>Creatina 100gr</div></a
-          >
-        </li>
-        <li>
-          <a href="">
-            <img src="creatina.jpg" alt="" width="80px" height="80px" />
-            <div>Creatina 200gr</div></a
-          >
-        </li>
-        <li>
-          <a href="">
-            <img src="creatina.jpg" alt="" width="80px" height="80px" />
-            <div>Creatina 300gr</div></a
-          >
-        </li>
-      </ul>
-    </section>
-
-    <h4 class="titulo">Kits de entrenamiento</h4>
-    <section>
-      <ul class="listado">
-        <li>
-          <a href="">
-            <img src="kit.jpg" alt="" width="80px" height="80px" />
-            <div>Paquete Inicial</div></a
-          >
-        </li>
-        <li>
-          <a href="">
-            <img src="kit.jpg" alt="" width="80px" height="80px" />
-            <div>Paquete Medio</div></a
-          >
-        </li>
-        <li>
-          <a href="">
-            <img src="kit.jpg" alt="" width="80px" height="80px" />
-            <div>Paquete Premium</div></a
-          >
-        </li>
-      </ul>
-    </section>
 
     <footer>
       <div>
         <h4>
-          <span>Seguinos en nuestras redes sociales</span>
+          <span>¡Seguinos en nuestras redes sociales!</span>
         </h4>
       </div>
       <ul>
