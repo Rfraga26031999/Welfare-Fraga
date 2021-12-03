@@ -1,0 +1,71 @@
+@import "../vars/variables";
+
+main {
+    .container {
+        .pb-2 {
+            b {
+                color: $claro;
+            }
+            b:hover {
+                color: $fuerte;
+                border-bottom: $claro 0.1rem inset;
+                transition: 0.3s;
+            }
+        }
+    }
+    .paquetes {
+        .pb-2 {
+            b {
+                color: $claro;
+            }
+            b:hover {
+                color: $fuerte;
+                border-bottom: $claro 0.1rem inset;
+                transition: 0.3s;
+            }
+        }
+    }
+    .carta {
+        .row {
+            .col {
+                .carta_arriba {
+                    background: linear-gradient(to top, $oscuro, $claro);
+                    border: none;
+                    .card-body {
+                        .card-title {
+                            border-bottom: black 0.1rem inset;
+                        }
+                        a {
+                            color: white;
+                            border: $claro 0.1rem solid;
+                        }
+                        a:hover {
+                            background-color: $claro;
+                            color: black;
+                            border:white 0.1rem solid;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+                .carta_abajo {
+                    background: linear-gradient(to bottom, $oscuro, $claro);
+                    border: none;
+                    .card-body {
+                        .card-title {
+                            border-bottom: black 0.1rem inset;
+                        }
+                        a {
+                            border: black 0.1rem solid;
+                        }
+                        a:hover {
+                            background-color: $oscuro;
+                            color: white;
+                            border: $claro 0.1rem solid;
+                            transition: 0.3seg;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

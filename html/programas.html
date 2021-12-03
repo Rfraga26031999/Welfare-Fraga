@@ -11,11 +11,11 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="../img/welfare.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Welfare | Programas</title>
   </head>
 
-  <body class="bg-secondary">
+  <body>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -30,14 +30,14 @@
     <header>
       <nav
         class="
-          navbar navbar-expand-lg navbar-dark
-          bg-dark bg-gradient
+          navbar navbar-expand-lg
           mb-3
           fixed-top
+          navbar-dark
         "
       >
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="../index.html"
+          <a class="navbar-brand" href="../index.html"
             ><img
               src="../img/welfare.svg"
               alt=""
@@ -62,37 +62,37 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
-                  class="nav-link active text-white"
+                  class="nav-link"
                   aria-current="page"
                   href="../index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="programas.html"
+                <a class="nav-link" href="programas.html"
                   >Programas</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="productos.html"
+                <a class="nav-link" href="productos.html"
                   >Productos</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex formulario">
               <input
-                class="form-control me-2"
+                class="form-control me-2 formulario__input"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-warning" type="submit">
+              <button class="btn" type="submit">
                 Search
               </button>
             </form>
@@ -103,38 +103,35 @@
 
     <main>
       <div
-        class="
-          container
+        class="container
           pt-5
           text-center
-          bg-dark
           text-white
           rounded-3
-          shadow-sm
         "
       >
-        <h2 class="py-2">Programas de entrenamiento</h2>
+        <h2 class="container__titulo py-2">Programas de entrenamiento</h2>
         <p class="pb-2">
-          <b class="text-warning">Tres</b> programas,
-          <b class="text-warning">tres</b> oportunidades de demostrar tu
-          <b class="text-warning">valor</b> ¿Hasta dónde llegaras? ¡Solo tú lo
+          <b>Tres</b> programas,
+          <b>tres</b> oportunidades de demostrar tu
+          <b>valor</b> ¿Hasta dónde llegaras? ¡Solo tú lo
           sabes!
         </p>
       </div>
 
-      <div class="container text-center bg-dark text-white rounded-2 my-3">
-        <h4>Iniciante</h4>
+      <div class="paquetes container text-center text-white rounded-2 my-3">
+        <h4 class="container__titulo">Iniciante</h4>
         <h6 class="pb-2">
           La duración de este programa es de
-          <span class="text-warning">3 meses</span>, sus armas seran las
+          <b>3 meses</b>, sus armas seran las
           siguientes:
         </h6>
       </div>
 
-      <div class="container">
+      <div class="carta container">
         <div class="row">
           <div class="col d-grid justify-content-center mb-2">
-            <div class="card bg-dark text-center" style="width: 18rem">
+            <div class="carta_abajo card text-center" style="width: 18rem">
               <img
                 src="../img/creatina.jpg"
                 class="card-img-top m-auto rounded-3 shadow-lg mt-2"
@@ -147,13 +144,13 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-warning d-block">Precio: $$$</a>
+                <a href="#" class="btn d-block">Precio: $$$</a>
               </div>
             </div>
           </div>
 
           <div class="col d-grid justify-content-center mb-2">
-            <div class="card bg-light text-center" style="width: 18rem">
+            <div class="carta_arriba card text-center" style="width: 18rem">
               <img
                 src="../img/proteina.png"
                 class="card-img-top m-auto rounded-3 shadow-lg mt-2"
@@ -161,18 +158,18 @@
                 style="width: 150px; height: 150px"
               />
               <div class="card-body">
-                <h5 class="card-title text-dark">Proteina Welfare 500gr</h5>
-                <p class="card-text text-dark">
+                <h5 class="card-title text-white">Proteina Welfare 500gr</h5>
+                <p class="card-text text-white">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-warning d-block">Precio: $$$</a>
+                <a href="#" class="btn d-block">Precio: $$$</a>
               </div>
             </div>
           </div>
 
           <div class="col d-grid justify-content-center mb-2">
-            <div class="card bg-dark text-center" style="width: 18rem">
+            <div class="carta_abajo card text-center" style="width: 18rem">
               <img
                 src="../img/kit.jpg"
                 class="card-img-top m-auto rounded-3 shadow-lg mt-2"
@@ -185,26 +182,26 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-warning d-block">Precio: $$$</a>
+                <a href="#" class="btn d-block">Precio: $$$</a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container text-center bg-dark text-white rounded-2 my-3">
-        <h4>Guerrero</h4>
+      <div class="paquetes container text-center text-white rounded-2 my-3">
+        <h4 class="container__titulo">Guerrero</h4>
         <h6 class="pb-2">
           La duración de este programa es de
-          <span class="text-warning">6 meses</span>, sus armas seran las
+          <b>6 meses</b>, sus armas seran las
           siguientes:
         </h6>
       </div>
 
-      <div class="container">
-        <div class="row">
+      <div class="carta container">
+        <div class="row mb-2">
           <div class="col d-grid justify-content-center mb-2">
-            <div class="card bg-light text-center" style="width: 18rem">
+            <div class="carta_arriba card text-center" style="width: 18rem">
               <img
                 src="../img/creatina.jpg"
                 class="card-img-top m-auto rounded-3 shadow-lg mt-2"
@@ -212,18 +209,18 @@
                 style="width: 150px; height: 150px"
               />
               <div class="card-body">
-                <h5 class="card-title text-dark">Creatina Welfare 200gr</h5>
-                <p class="card-text text-dark">
+                <h5 class="card-title text-white">Creatina Welfare 200gr</h5>
+                <p class="card-text text-white">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-warning d-block">Precio: $$$</a>
+                <a href="#" class="btn d-block">Precio: $$$</a>
               </div>
             </div>
           </div>
 
           <div class="col d-grid justify-content-center mb-2">
-            <div class="card bg-dark text-center" style="width: 18rem">
+            <div class="carta_abajo card text-center" style="width: 18rem">
               <img
                 src="../img/proteina.png"
                 class="card-img-top m-auto rounded-3 shadow-lg mt-2"
@@ -236,13 +233,13 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-warning d-block">Precio: $$$</a>
+                <a href="#" class="btn d-block">Precio: $$$</a>
               </div>
             </div>
           </div>
 
           <div class="col d-grid justify-content-center mb-2">
-            <div class="card bg-light text-center" style="width: 18rem">
+            <div class="carta_arriba card text-center" style="width: 18rem">
               <img
                 src="../img/kit.jpg"
                 class="card-img-top m-auto rounded-3 shadow-lg mt-2"
@@ -250,12 +247,12 @@
                 style="width: 150px; height: 150px"
               />
               <div class="card-body">
-                <h5 class="card-title text-dark">Kit intermedio</h5>
-                <p class="card-text text-dark">
+                <h5 class="card-title text-white">Kit intermedio</h5>
+                <p class="card-text text-white">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-warning d-block">Precio: $$$</a>
+                <a href="#" class="btn d-block">Precio: $$$</a>
               </div>
             </div>
           </div>
@@ -263,9 +260,9 @@
       </div>
     </main>
 
-    <footer class="bg-dark bg-gradient mt-3">
+    <footer>
       <div class="container d-flex justify-content-center">
-        <h4 class="text-white">
+        <h4>
           <span>¡Seguinos en nuestras redes sociales!</span>
         </h4>
       </div>

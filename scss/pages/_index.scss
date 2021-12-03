@@ -1,0 +1,15 @@
+@import "../vars/variables";
+
+.carouselStyle {
+    max-width: 900px;
+  }
+
+main {
+  .carousel {
+    .carousel-indicators {
+      button {
+        background-color: $claro;
+      }
+    }
+  }
+}
