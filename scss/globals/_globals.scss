@@ -11,14 +11,10 @@ body {
 
 header {
     nav {
-      background-color: $claro;
       border-radius: 0 0 5px 5px;
       background: linear-gradient(to bottom, $oscuro, $claro);
       border-bottom: $claro 0.1rem solid;
       .container-fluid {
-        .navbar-brand {
-          color: white;
-        }
         .navbar-brand:hover {
           @include hover($claro, 0.5s )
         }

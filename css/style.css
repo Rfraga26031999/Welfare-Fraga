@@ -3,13 +3,9 @@ body {
 }
 
 header nav {
-  background-color: #ffbc7d;
   border-radius: 0 0 5px 5px;
   background: linear-gradient(to bottom, #010212, #ffbc7d);
   border-bottom: #ffbc7d 0.1rem solid;
-}
-header nav .container-fluid .navbar-brand {
-  color: white;
 }
 header nav .container-fluid .navbar-brand:hover {
   color: #ffbc7d;
