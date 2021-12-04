@@ -1,6 +1,10 @@
 @import "../vars/variables";
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     .container {
         .row {
             .col {
@@ -24,11 +28,21 @@ main {
                     .btn:hover {
                         transition: 0.3s;
                         color: white;
-                        background-color: $intermedio;
+                        background-color: $oscuro;
                         border-color: $claro;
                     }
                 }
             }
         }
     }
+}
+
+footer {
+   margin-top: auto;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }

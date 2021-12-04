@@ -79,6 +79,12 @@ main .carousel .carousel-indicators button {
   background-color: #ffbc7d;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
 main .container .row .col form .mb-3 label {
   background-color: #ffbc7d;
   color: black;
@@ -96,8 +102,18 @@ main .container .row .col form .btn {
 main .container .row .col form .btn:hover {
   transition: 0.3s;
   color: white;
-  background-color: #ff9736;
+  background-color: #010212;
   border-color: #ffbc7d;
+}
+
+footer {
+  margin-top: auto;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 main .container .pb-2 b {
