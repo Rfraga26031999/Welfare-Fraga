@@ -14,10 +14,10 @@ main {
                             background-color: $claro;
                             color: black;
                             border-radius: 0.3rem;
-                            width: 100px;
+                            width: 20vw;
                         }
                         input {
-                            width: 200px;
+                            width: 50vw;
                         }
                     }
                     .btn {
@@ -35,14 +35,4 @@ main {
             }
         }
     }
-}
-
-footer {
-   margin-top: auto;
-}
-
-body {
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
 }

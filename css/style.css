@@ -89,10 +89,10 @@ main .container .row .col form .mb-3 label {
   background-color: #ffbc7d;
   color: black;
   border-radius: 0.3rem;
-  width: 100px;
+  width: 20vw;
 }
 main .container .row .col form .mb-3 input {
-  width: 200px;
+  width: 50vw;
 }
 main .container .row .col form .btn {
   color: black;
@@ -104,16 +104,6 @@ main .container .row .col form .btn:hover {
   color: white;
   background-color: #010212;
   border-color: #ffbc7d;
-}
-
-footer {
-  margin-top: auto;
-}
-
-body {
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
 }
 
 main .container .pb-2 b {
