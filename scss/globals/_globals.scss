@@ -78,6 +78,11 @@ footer {
     padding-top: 0.5rem;
     ul {
       li{
+        h5:hover {
+          border-bottom: 0.1rem solid $claro;
+          color: white;
+          transition: 0.7s;
+        }
         .nav-link {
           color: $claro;
           padding: 0;

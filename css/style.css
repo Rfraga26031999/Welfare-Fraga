@@ -56,6 +56,11 @@ footer .container h4:hover {
 footer .row {
   padding-top: 0.5rem;
 }
+footer .row ul li h5:hover {
+  border-bottom: 0.1rem solid #ffbc7d;
+  color: white;
+  transition: 0.7s;
+}
 footer .row ul li .nav-link {
   color: #ffbc7d;
   padding: 0;
