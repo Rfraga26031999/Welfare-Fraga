@@ -48,6 +48,11 @@ footer .container h4 {
   border-bottom: #ffbc7d 0.1rem inset;
   padding-bottom: 0.5rem;
 }
+@media screen and (max-width: 380px) {
+  footer .container h4 {
+    font-size: medium;
+  }
+}
 footer .container h4:hover {
   color: black;
   border-bottom: #ff7a00 0.1rem inset;
@@ -56,53 +61,37 @@ footer .container h4:hover {
 footer .row {
   padding-top: 0.5rem;
 }
-@media screen {
-  footer .row ul li h5 {
-    max-width: 768px;
-    font-size: large;
-  }
-}
-@media screen {
-  footer .row ul li h5 {
-    max-width: 576px;
-    font-size: small;
-  }
-}
-footer .row ul li h5:hover {
-  border-bottom: 0.1rem solid #ffbc7d;
-  color: white;
-  transition: 0.7s;
-}
 footer .row ul li .nav-link {
   color: #ffbc7d;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
   border-radius: 0.2rem;
 }
-@media screen {
+@media screen and (max-width: 768px) {
   footer .row ul li .nav-link {
-    max-width: 768px;
-    font-size: large;
+    font-size: medium;
   }
 }
-@media screen {
+@media screen and (max-width: 576px) {
   footer .row ul li .nav-link {
-    max-width: 576px;
     font-size: small;
   }
 }
-@media screen {
-  footer .row ul li .nav-link .bi svg {
-    max-width: 768px;
-    width: 20px;
-    height: 20px;
+@media screen and (max-width: 460px) {
+  footer .row ul li .nav-link {
+    font-size: x-small;
   }
 }
-@media screen {
+@media screen and (max-width: 576px) {
   footer .row ul li .nav-link .bi svg {
-    max-width: 576px;
     width: 15px;
     height: 15px;
+  }
+}
+@media screen and (max-width: 460px) {
+  footer .row ul li .nav-link .bi svg {
+    width: 8px;
+    height: 8px;
   }
 }
 footer .row ul li .nav-link:hover {

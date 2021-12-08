@@ -67,6 +67,9 @@ footer {
       border-top: $claro 0.1rem outset;
       border-bottom: $claro 0.1rem inset;
       padding-bottom: 0.5rem;
+      @media screen and (max-width: 380px) {
+        font-size: medium;
+      }
     }
     h4:hover {
       color: black;
@@ -78,39 +81,29 @@ footer {
     padding-top: 0.5rem;
     ul {
       li{
-        h5 {
-          @media screen {max-width: 768px;
-            font-size: large;
-          }
-          @media screen {max-width: 576px;
-            font-size: small;
-          }
-        }
-        h5:hover {
-          border-bottom: 0.1rem solid $claro;
-          color: white;
-          transition: 0.7s;
-        }
         .nav-link {
           color: $claro;
           padding: 0;
-          margin: 0;
+          margin-top: 0;
           border-radius: 0.2rem;
-          @media screen {max-width: 768px;
-            font-size: large;
+          @media screen and (max-width: 768px) {
+            font-size: medium;
           }
-          @media screen {max-width: 576px;
+          @media screen and (max-width: 576px){
             font-size: small;
+          }
+          @media screen and (max-width: 460px) {
+            font-size: x-small;
           }
           .bi {
             svg {
-              @media screen {max-width: 768px;
-                width: 20px;
-                height: 20px;
-              }
-              @media screen {max-width: 576px;
+              @media screen and (max-width: 576px){
                 width: 15px;
                 height: 15px;
+              }
+              @media screen and (max-width: 460px) {
+                width: 8px;
+                height: 8px;
               }
             }
           }
