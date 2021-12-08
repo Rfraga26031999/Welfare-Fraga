@@ -56,6 +56,18 @@ footer .container h4:hover {
 footer .row {
   padding-top: 0.5rem;
 }
+@media screen {
+  footer .row ul li h5 {
+    max-width: 768px;
+    font-size: large;
+  }
+}
+@media screen {
+  footer .row ul li h5 {
+    max-width: 576px;
+    font-size: small;
+  }
+}
 footer .row ul li h5:hover {
   border-bottom: 0.1rem solid #ffbc7d;
   color: white;
@@ -66,6 +78,32 @@ footer .row ul li .nav-link {
   padding: 0;
   margin: 0;
   border-radius: 0.2rem;
+}
+@media screen {
+  footer .row ul li .nav-link {
+    max-width: 768px;
+    font-size: large;
+  }
+}
+@media screen {
+  footer .row ul li .nav-link {
+    max-width: 576px;
+    font-size: small;
+  }
+}
+@media screen {
+  footer .row ul li .nav-link .bi svg {
+    max-width: 768px;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen {
+  footer .row ul li .nav-link .bi svg {
+    max-width: 576px;
+    width: 15px;
+    height: 15px;
+  }
 }
 footer .row ul li .nav-link:hover {
   color: #ff7a00;
