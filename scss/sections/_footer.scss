@@ -1,0 +1,60 @@
+@import "../vars/variables";
+
+footer {
+  background-color: $claro;
+  background: linear-gradient(to top, $oscuro, $claro);
+  .container {
+    h4 {
+      color: white;
+      border-top: $claro 0.1rem outset;
+      border-bottom: $claro 0.1rem inset;
+      padding-bottom: 0.5rem;
+      @media screen and (max-width: 380px) {
+        font-size: medium;
+      }
+    }
+    h4:hover {
+      color: black;
+      border-bottom: $fuerte 0.1rem inset;
+      transition: 0.5s;
+    }
+  }
+  .row {
+    padding-top: 0.5rem;
+    ul {
+      li{
+        .nav-link {
+          color: $claro;
+          padding: 0;
+          margin-top: 0;
+          border-radius: 0.2rem;
+          @media screen and (max-width: 768px) {
+          font-size: medium;
+          }
+          @media screen and (max-width: 576px){
+          font-size: small;
+          }
+          @media screen and (max-width: 460px) {
+          font-size: x-small;
+          }
+          .bi {
+            svg {
+              @media screen and (max-width: 576px){
+              width: 15px;
+              height: 15px;
+              }
+              @media screen and (max-width: 460px){
+              width: 8px;
+              height: 8px;
+              }
+            }
+          }
+        }
+        .nav-link:hover {
+          color: $fuerte;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}

@@ -3,3 +3,8 @@ $fuerte: #ff7a00;
 $claro: #ffbc7d;
 $azul_oscuro: #02064d; 
 $oscuro: #010212;
+
+@mixin hover($color, $transition){
+  color: $color;
+  transition: $transition;
+}
