@@ -1,5 +1,7 @@
 body {
   background-color: #010212;
+  display: grid;
+  min-height: 100vh;
 }
 
 .carouselStyle {
@@ -16,21 +18,41 @@ main {
   align-content: center;
   justify-content: center;
 }
-main .container .row .col form .mb-3 label {
+main .contenedor .fila .columna .formulario .div1 label {
   background-color: #ffbc7d;
   color: black;
   border-radius: 0.3rem;
-  width: 20vw;
+  width: 40%;
 }
-main .container .row .col form .mb-3 input {
-  width: 50vw;
+@media screen and (min-width: 800px) {
+  main .contenedor .fila .columna .formulario .div1 label {
+    width: 150px;
+  }
 }
-main .container .row .col form .btn {
+@media screen and (min-width: 1050px) {
+  main .contenedor .fila .columna .formulario .div1 label {
+    width: 250px;
+  }
+}
+main .contenedor .fila .columna .formulario .div1 input {
+  width: 60%;
+}
+@media screen and (min-width: 800px) {
+  main .contenedor .fila .columna .formulario .div1 input {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  main .contenedor .fila .columna .formulario .div1 input {
+    width: 450px;
+  }
+}
+main .contenedor .fila .columna .formulario .boton {
   color: black;
   background-color: #ffbc7d;
   border-color: #ff7a00;
 }
-main .container .row .col form .btn:hover {
+main .contenedor .fila .columna .formulario .boton:hover {
   transition: 0.3s;
   color: white;
   background-color: #010212;

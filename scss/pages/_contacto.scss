@@ -5,27 +5,39 @@ main {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  .container {
-    .row {
-      .col {
-        form {
-          .mb-3 {
+  .contenedor {
+    .fila {
+      .columna {
+        .formulario {
+          .div1 {
             label {
               background-color: $claro;
               color: black;
               border-radius: 0.3rem;
-              width: 20vw;
+              width: 40%;
+              @media screen and(min-width:800px) {
+                width: 150px;
+              }
+              @media screen and(min-width: 1050px) {
+                width: 250px;
+              }
             }
             input {
-              width: 50vw;
+              @media screen and(min-width:800px) {
+                width: 300px;
+              }
+              @media screen and(min-width:1050px) {
+                width: 450px;
+              }
+              width: 60%;
             }
           }
-          .btn {
+          .boton {
             color: black;
             background-color: $claro;
             border-color: $fuerte;
           }
-          .btn:hover {
+          .boton:hover {
             transition: 0.3s;
             color: white;
             background-color: $oscuro;
