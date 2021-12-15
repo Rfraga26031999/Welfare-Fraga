@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Welfare ofrece planes de entrenamiento y alimentacion integrales a cargo de los mejores profesionales del deporte y la salud.">
     <meta name="keywords" content="Entrenamiento - Salud - Deporte - Cambio - Bienestar">
     <!-- LINKS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
     <link rel="shortcut icon" href="../img/welfare.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Welfare | Inicio</title>
   </head>
     <!-- BODY -->
@@ -20,26 +20,26 @@
     <header>
       <nav class=" navbar navbar-expand-lg mb-3 fixed-top navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="img/welfare.svg" alt="Logo de la marca Welfare" width="30" height="24" class="d-inline-block align-text-top"/>Welfare</a>
+          <a class="navbar-brand" href="../index.html"><img src="../img/welfare.svg" alt="Logo de la marca Welfare" width="30" height="24" class="d-inline-block align-text-top"/>Welfare</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/programas.html">Programas</a>
+                <a class="nav-link" href="programas.html">Programas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/productos.html">Productos</a>
+                <a class="nav-link" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
             </ul>
             <form class="d-flex formulario">
@@ -52,48 +52,87 @@
     </header>
     <!-- MAIN -->
     <main>
-    <!-- INDEX -->
-      <div class="container pt-5 text-center text-white">
-        <h1 class="container__titulo py-2">Tu siguiente nivel</h1>
-      </div>
-      <div id="carouselExampleCaptions" class="carousel slide d-flex justify-content-center mb-3" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- PROGRAMAS -->
+      <section>
+        <div class="container pt-5 text-center text-white">
+          <h1 class="container__titulo py-2">Programas de entrenamiento</h1>
+          <p class="pb-2"><b>Tres</b> programas, <b>tres</b> oportunidades de demostrar tu <b>valor</b> ¿Hasta dónde llegaras? ¡Solo tú lo sabes!</p>
         </div>
-        <div class="carousel-inner carouselStyle rounded-2 mt-2">
-          <div class="carousel-item active">
-            <img src="img/imagen1.jpg" class="d-block w-100" alt="Persona levantando una mancuerna" />
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Somos el cambio</h3>
-              <p>¡Bienvenido a Welfare!</p>
+        <div class="paquetes container text-center text-white rounded-2 my-3">
+          <h4 class="container__titulo">Iniciante</h4>
+          <h6 class="pb-2">La duración de este programa es de <b>3 meses</b>, sus armas seran las siguientes:</h6>
+        </div>
+        <div class="carta container">
+          <div class="row">
+            <div class="col d-grid justify-content-center mb-2">
+              <div class="carta_abajo card text-center" style="width: 18rem">
+                <img src="../img/creatina.jpg" class="card-img-top m-auto rounded-3 shadow-lg mt-2" alt="Creatina" style="width: 150px; height: 150px"/>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Creatina Welfare 100gr</h5>
+                  <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="#" class="btn d-block">Precio: $$$</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/imagen2.jpg" class="d-block w-100" alt="Persona agarrando una barra olimpica" />
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Planes de entrenamiento</h3>
-              <p>Encontrarás los mejores planes de entrenamiento guiados por profesionales de la salud y el deporte.</p>
+            <div class="col d-grid justify-content-center mb-2">
+              <div class="carta_arriba card text-center" style="width: 18rem"><img src="../img/proteina.png" class="card-img-top m-auto rounded-3 shadow-lg mt-2" alt="Proteína" style="width: 150px; height: 150px"/>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Proteína Welfare 500gr</h5>
+                  <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn d-block">Precio: $$$</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/imagen3.jpg" class="d-block w-100" alt="Disco y una barra olimpica" />
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Planes alimenticios</h3>
-              <p>Acompañado tambien de planes de alimentación en base a tu tipo de dieta y necesidades.</p>
+            <div class="col d-grid justify-content-center mb-2">
+              <div class="carta_abajo card text-center" style="width: 18rem">
+                <img src="../img/kit.jpg" class="card-img-top m-auto rounded-3 shadow-lg mt-2" alt="Kit de entrenamiento" style="width: 150px; height: 150px"/>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Kit inicial</h5>
+                  <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn d-block">Precio: $$$</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Volver</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
+        <div class="paquetes container text-center text-white rounded-2 my-3">
+          <h4 class="container__titulo">Guerrero</h4>
+          <h6 class="pb-2">La duración de este programa es de <b>6 meses</b>, sus armas seran las siguientes:</h6>
+        </div>
+        <div class="carta container">
+          <div class="row mb-2">
+            <div class="col d-grid justify-content-center mb-2">
+              <div class="carta_arriba card text-center" style="width: 18rem">
+                <img src="../img/creatina.jpg" class="card-img-top m-auto rounded-3 shadow-lg mt-2" alt="Creatina" style="width: 150px; height: 150px"/>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Creatina Welfare 200gr</h5>
+                  <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn d-block">Precio: $$$</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-grid justify-content-center mb-2">
+              <div class="carta_abajo card text-center" style="width: 18rem">
+                <img src="../img/proteina.png" class="card-img-top m-auto rounded-3 shadow-lg mt-2" alt="Proteína" style="width: 150px; height: 150px"/>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Proteína Welfare 1000gr</h5>
+                  <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn d-block">Precio: $$$</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-grid justify-content-center mb-2">
+              <div class="carta_arriba card text-center" style="width: 18rem">
+                <img src="../img/kit.jpg" class="card-img-top m-auto rounded-3 shadow-lg mt-2" alt="Kit de entrenamiento" style="width: 150px; height: 150px"/>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Kit intermedio</h5>
+                  <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn d-block">Precio: $$$</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer>

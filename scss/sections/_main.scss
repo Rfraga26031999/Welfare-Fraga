@@ -1,0 +1,14 @@
+@import "../vars/variables";
+
+main {
+  .container {
+    .container__titulo {
+      display: inline-block;
+      border-bottom: $claro 0.1rem inset;
+    }
+    .container__titulo:hover {
+      border-bottom:white 0.1rem inset;
+      @include hover($claro, 0.5s )
+    }
+  }
+}

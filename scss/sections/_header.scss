@@ -1,0 +1,36 @@
+@import "../vars/variables";
+
+header {
+  nav {
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(to bottom, $oscuro, $claro);
+    border-bottom: $claro 0.1rem solid;
+    .container-fluid {
+      .navbar-brand:hover {
+        @include hover($claro, 0.5s )
+      }
+    }
+    .formulario {
+      .btn {
+        color: white;
+        border-color:$oscuro ;
+      }
+      .btn:hover {
+        background-color: $oscuro;
+        @include hover($fuerte, 0.5s )
+      }
+    }
+    .collapse {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: white;
+          }
+          .nav-link:hover {
+            @include hover($fuerte, 0.5s )
+          }
+        }
+      }
+    }
+  }
+}

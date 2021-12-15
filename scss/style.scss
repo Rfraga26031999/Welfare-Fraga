@@ -1,3 +1,10 @@
-@import "globals";
-@import "variables";
-@import "index";
+@import "globals/globals";
+@import "vars/variables";
+@import "pages/index";
+@import "pages/contacto";
+@import "pages/programas";
+@import "pages/nosotros";
+@import "pages/productos";
+@import "sections/footer";
+@import "sections/header";
+@import "sections/main";

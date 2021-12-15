@@ -1,7 +1,7 @@
 {
-  "name": "desarrollo-web",
+  "name": "proyecto-welfare",
   "version": "1.0.0",
-  "description": "",
+  "description": "Welfare es un proyecto destinado a cambiarte la vida. Es una plataforma donde podras encontrar planes de entrenamiento y alimentacion, todo esto guiado por los mejores profesionales de la salud y el deporte.",
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch scss/style.scss css/style.css"

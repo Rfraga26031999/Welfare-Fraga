@@ -1,5 +1,207 @@
+body {
+  background-color: #010212;
+}
+
 .carouselStyle {
   max-width: 900px;
+}
+
+main .carousel .carousel-indicators button {
+  background-color: #ffbc7d;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+main .contenedor .fila .columna .formulario .div1 label {
+  background-color: #ffbc7d;
+  color: black;
+  border-radius: 0.3rem;
+  width: 40%;
+}
+@media screen and (min-width: 800px) {
+  main .contenedor .fila .columna .formulario .div1 label {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  main .contenedor .fila .columna .formulario .div1 label {
+    width: 250px;
+  }
+}
+main .contenedor .fila .columna .formulario .div1 input {
+  width: 60%;
+}
+@media screen and (min-width: 800px) {
+  main .contenedor .fila .columna .formulario .div1 input {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  main .contenedor .fila .columna .formulario .div1 input {
+    width: 450px;
+  }
+}
+main .contenedor .fila .columna .formulario .boton {
+  color: black;
+  background-color: #ffbc7d;
+  border-color: #ff7a00;
+}
+main .contenedor .fila .columna .formulario .boton:hover {
+  transition: 0.3s;
+  color: white;
+  background-color: #010212;
+  border-color: #ffbc7d;
+}
+
+main .container .pb-2 b {
+  color: #ffbc7d;
+}
+main .container .pb-2 b:hover {
+  color: #ff7a00;
+  border-bottom: #ffbc7d 0.1rem inset;
+  transition: 0.3s;
+}
+main .paquetes .pb-2 b {
+  color: #ffbc7d;
+}
+main .paquetes .pb-2 b:hover {
+  color: #ff7a00;
+  border-bottom: #ffbc7d 0.1rem inset;
+  transition: 0.3s;
+}
+main .carta .row .col .carta_arriba {
+  background: linear-gradient(to top, #010212, #ffbc7d);
+  border: none;
+}
+main .carta .row .col .carta_arriba .card-body .card-title {
+  border-bottom: black 0.1rem inset;
+}
+main .carta .row .col .carta_arriba .card-body a {
+  color: white;
+  border: #ffbc7d 0.1rem solid;
+}
+main .carta .row .col .carta_arriba .card-body a:hover {
+  background-color: #ffbc7d;
+  color: black;
+  border: white 0.1rem solid;
+  transition: 0.3s;
+}
+main .carta .row .col .carta_abajo {
+  background: linear-gradient(to bottom, #010212, #ffbc7d);
+  border: none;
+}
+main .carta .row .col .carta_abajo .card-body .card-title {
+  border-bottom: black 0.1rem inset;
+}
+main .carta .row .col .carta_abajo .card-body a {
+  border: black 0.1rem solid;
+}
+main .carta .row .col .carta_abajo .card-body a:hover {
+  background-color: #010212;
+  color: white;
+  border: #ffbc7d 0.1rem solid;
+  transition: 0.3seg;
+}
+
+footer {
+  background-color: #ffbc7d;
+  background: linear-gradient(to top, #010212, #ffbc7d);
+}
+footer .container h4 {
+  color: white;
+  border-top: #ffbc7d 0.1rem outset;
+  border-bottom: #ffbc7d 0.1rem inset;
+  padding-bottom: 0.5rem;
+}
+@media screen and (max-width: 380px) {
+  footer .container h4 {
+    font-size: medium;
+  }
+}
+footer .container h4:hover {
+  color: black;
+  border-bottom: #ff7a00 0.1rem inset;
+  transition: 0.5s;
+}
+footer .row {
+  padding-top: 0.5rem;
+}
+footer .row ul li .nav-link {
+  color: #ffbc7d;
+  padding: 0;
+  margin-top: 0;
+  border-radius: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  footer .row ul li .nav-link {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .row ul li .nav-link {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 460px) {
+  footer .row ul li .nav-link {
+    font-size: x-small;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .row ul li .nav-link .bi svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 460px) {
+  footer .row ul li .nav-link .bi svg {
+    width: 8px;
+    height: 8px;
+  }
+}
+footer .row ul li .nav-link:hover {
+  color: #ff7a00;
+  transition: 0.5s;
+}
+
+header nav {
+  border-radius: 0 0 5px 5px;
+  background: linear-gradient(to bottom, #010212, #ffbc7d);
+  border-bottom: #ffbc7d 0.1rem solid;
+}
+header nav .container-fluid .navbar-brand:hover {
+  color: #ffbc7d;
+  transition: 0.5s;
+}
+header nav .formulario .btn {
+  color: white;
+  border-color: #010212;
+}
+header nav .formulario .btn:hover {
+  background-color: #010212;
+  color: #ff7a00;
+  transition: 0.5s;
+}
+header nav .collapse .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+header nav .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #ff7a00;
+  transition: 0.5s;
+}
+
+main .container .container__titulo {
+  display: inline-block;
+  border-bottom: #ffbc7d 0.1rem inset;
+}
+main .container .container__titulo:hover {
+  border-bottom: white 0.1rem inset;
+  color: #ffbc7d;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
